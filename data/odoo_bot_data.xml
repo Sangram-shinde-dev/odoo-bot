@@ -1,0 +1,17 @@
+<odoo>
+<record id="partner_odoo_bot_new" model="res.partner">
+<field name="name">odoo Bot</field>
+<field name="is_company">False</field>
+</record>
+<!--  Create a system user for odooBot  -->
+<record id="base_user_odoo_bot_new" model="res.users">
+<field name="name">odoo Bot</field>
+<field name="login">odoo_bot_new</field>
+<field name="password">odoobot123</field>
+<field name="partner_id" ref="partner_odoo_bot_new"/>
+<field name="active">True</field>
+<field name="share">False</field>
+<!--  Not a portal user  -->
+<field name="groups_id" eval="[(6, 0, [ref('base.group_system')])]"/>
+</record>
+</odoo>
