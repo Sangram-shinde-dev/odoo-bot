@@ -7,7 +7,7 @@ _logger = logging.getLogger(__name__)
 class MailMessage(models.Model):
     _inherit = 'mail.message'
 
-    API_KEY = 'AIzaSyBD9CJrHhKY3nPQu8pUkueyARoDWDqSq2I'  # Update with your actual Gemini API key
+    API_KEY = 'Your-APi-Key'  # Update with your actual Gemini API key
     GEMINI_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent'
 
     @api.model
