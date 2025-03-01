@@ -5,7 +5,7 @@
     'category': 'Communication',
     'summary': 'AI Chatbot Integration for Odoo with odooBot',
     'description': 'This module integrates odooBot, an AI-based chatbot, into Odoo.',
-    'author': 'Trinesis-Sangram',
+    'author': 'Sangram',
     'license': 'LGPL-3',
     'depends': [
         'base',
